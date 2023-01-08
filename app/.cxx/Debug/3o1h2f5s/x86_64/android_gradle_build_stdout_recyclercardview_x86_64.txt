@@ -1,0 +1,2 @@
+ninja: Entering directory `C:\Users\damla\Documents\RecyclerCardView_paises_tarea\RecyclerCardView_paises_tarea\app\.cxx\Debug\3o1h2f5s\x86_64'
+ninja: no work to do.

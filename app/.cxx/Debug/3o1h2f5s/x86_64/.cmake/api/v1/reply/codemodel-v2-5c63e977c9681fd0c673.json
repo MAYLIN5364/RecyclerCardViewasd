@@ -1,0 +1,59 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.6.0"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "recyclercardview",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "recyclercardview::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-recyclercardview-Debug-81db1f9ac29d9a56ee82.json",
+					"name" : "recyclercardview",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/damla/Documents/RecyclerCardView_paises_tarea/RecyclerCardView_paises_tarea/app/.cxx/Debug/3o1h2f5s/x86_64",
+		"source" : "C:/Users/damla/Documents/RecyclerCardView_paises_tarea/RecyclerCardView_paises_tarea/app/src/main/cpp"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 1
+	}
+}

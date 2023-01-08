@@ -1,0 +1,3 @@
+C:/Users/damla/Documents/RecyclerCardView_paises_tarea/RecyclerCardView_paises_tarea/app/.cxx/Debug/3o1h2f5s/x86/CMakeFiles/recyclercardview.dir
+C:/Users/damla/Documents/RecyclerCardView_paises_tarea/RecyclerCardView_paises_tarea/app/.cxx/Debug/3o1h2f5s/x86/CMakeFiles/edit_cache.dir
+C:/Users/damla/Documents/RecyclerCardView_paises_tarea/RecyclerCardView_paises_tarea/app/.cxx/Debug/3o1h2f5s/x86/CMakeFiles/rebuild_cache.dir
