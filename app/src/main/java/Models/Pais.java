@@ -51,21 +51,23 @@ public class Pais {
     private String urlBandera, titulo, capital, prefijo, codPais;
 
     public Pais(JSONObject a) throws JSONException {
-        titulo =  a.getString("Name").toString();
+        titulo = a.getString("Name").toString();
         JSONObject countryCode = a.getJSONObject("CountryCodes");
         codPais = countryCode.getString("iso2");
-        urlBandera =  "http://www.geognos.com/api/en/countries/flag/"+codPais+".png";
-        JSONObject countryCapital = a.getJSONObject("Capital");
-        capital =   countryCapital.getString("Name").toString() ;
-        prefijo =  a.getString("TelPref").toString() ;
-    }
-
-    public static ArrayList<Pais> JsonObjectsBuild(JSONArray datos) throws JSONException {
-        ArrayList<Pais> paises = new ArrayList<>();
-
-        for (int i = 0; i < datos.length(); i++) {
-            paises.add(new Pais(datos.getJSONObject(i)));
+        urlBandera = "http://www.geognos.com/api/en/countries/flag/" + codPais + ".png";
+       if (!a.isNull("Capital")) {
+            JSONObject countryCapital = a.getJSONObject("Capital");
+            capital = countryCapital.getString("Name").toString();
+        } else capital ="NO TIENE CAPITAL";
+            prefijo=a.getString("TelPref").toString();
         }
-        return paises;
+
+        public static ArrayList<Pais> JsonObjectsBuild (JSONArray datos) throws JSONException {
+            ArrayList<Pais> paises = new ArrayList<>();
+
+            for (int i = 0; i < datos.length(); i++) {
+                paises.add(new Pais(datos.getJSONObject(i)));
+            }
+            return paises;
+        }
     }
-}

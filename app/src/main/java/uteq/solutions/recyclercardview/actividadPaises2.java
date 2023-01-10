@@ -67,14 +67,14 @@ public class actividadPaises2 extends AppCompatActivity {
                                 Pais ps = new Pais(paisValue);
                                 paises.add(ps);
                                 Log.d("etiqueta", paisValue.toString());
-                                int resId = R.anim.layout_animation_down_to_up;
-                                LayoutAnimationController animation = AnimationUtils.loadLayoutAnimation(getApplicationContext(),
-                                        resId);
-                                recyclerPais.setLayoutAnimation(animation);
-                                PaisAdaptador adapatorPais = new PaisAdaptador(getApplicationContext(), paises);
-                                recyclerPais.setAdapter(adapatorPais);
-                            }
 
+                            }
+                            int resId = R.anim.layout_animation_down_to_up;
+                            LayoutAnimationController animation = AnimationUtils.loadLayoutAnimation(getApplicationContext(),
+                                    resId);
+                            recyclerPais.setLayoutAnimation(animation);
+                            PaisAdaptador adapatorPais = new PaisAdaptador(getApplicationContext(), paises);
+                            recyclerPais.setAdapter(adapatorPais);
 
                         } catch (JSONException ex) {
                             ex.printStackTrace();
